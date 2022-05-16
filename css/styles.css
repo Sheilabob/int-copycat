@@ -1,0 +1,394 @@
+body {
+    font-family: "Heebo", sans-serif;
+    margin: 3rem;
+}
+
+h1 {
+    color: #1665D8;
+    font-weight: 500;
+    margin: 0;
+}
+
+h3 {
+    color: #3E3F42;
+    margin: 0;
+}
+
+h6 {
+    font-size: .9rem;
+    font-weight: 400;
+    color: #3E3F42;
+}
+
+/* Header CSS */
+
+.header-results {
+    margin-bottom: 2rem;
+}
+
+/* General flex CSS */
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.flex-left {
+    flex: 50%;
+}
+
+.flex-right {
+    flex: 50%;
+}
+
+/* Menu */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    margin-right: 2.5em;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #3E3F42;
+}
+
+.line-divider {
+    display: block;
+    border: solid #D7DEE4;
+    background: #D7DEE4;
+    border-radius: 6px;
+}
+
+.select-divider {
+    position: relative;
+    bottom: 2px;
+    width: 92px;
+    border: solid #27D381;
+    background: #27D381;
+    z-index: 99;
+}
+
+/* How to section */
+
+.how-to-box {
+    flex: 50%;
+    margin-top: 2em;
+    padding: 2em;
+    background: #F9FAFB;
+    border-radius: 8px;
+}
+
+.how-to-text {
+    font-size: 1em;
+}
+
+.how-to-box p {
+    color: #3E3F42;
+}
+
+
+/* Select Score Section */
+
+.title-h3 {
+    color: #07025B;
+    size: 1.25rem;
+}
+
+.score-section {
+    margin-top: 2em;
+}
+
+.set-target {
+    margin-right: 10%;
+}
+
+input {
+    display: inline;
+    margin-top: 2em;
+    height: 50px;
+    flex: 60%;
+}
+
+button {
+    margin-top: 2em;
+    background-color: #27D381;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    height: 55px;
+    border-radius: 6px;
+    margin-left: 1em;
+    flex: 40%;
+}
+
+.score-line {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.score-line-number {
+    margin-top: -30px;
+    flex: 32%;
+    text-align: left;
+    color: #6B6C6F;
+}
+
+.score-line-number-end {
+    margin-top: -30px;
+    flex: 4%;
+    text-align: right;
+    float: right;
+    color: #6B6C6F;
+
+}
+
+.red-line {
+    flex: 33.33%;
+    height: 14px;
+    border: solid #F53758;
+    background: #F53758;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.yellow-line {
+    flex: 33.33%;
+    height: 14px;
+    border: solid #F1C531;
+    background: #F1C531;
+}
+
+.green-line {
+    flex: 33.33%;
+    height: 14px;
+    border: solid #27D381;
+    background: #27D381;
+    border-radius: 0px 6px 6px 0px;
+}
+
+
+.circle-selector {
+    color: white;
+    font-size: 2.1rem !important;
+    position: relative;
+    right: 40%;
+    text-shadow: 0px 1.33333px 5.33333px rgba(0, 0, 0, 0.203562);
+    z-index: 50;
+}
+
+/* Credit Score Section */
+
+.bank-logo {
+    max-width: 5rem;
+    height: 22px;
+    border-bottom: 1px solid #EBEBEB;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.credit-scores {
+    margin-left: 7rem;
+}
+
+.flex-credit {
+    flex: 33.33%;
+}
+
+.points {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #3E3F42;
+    margin-top: 0;
+}
+
+.triangle-up {
+    font-size: 1rem;
+    color: #27D381;
+    position: relative;
+    bottom: 4px;
+}
+
+.triangle-up-number {
+    font-size: 1rem;
+    position: relative;
+    right: 17px;
+    bottom: 16px;
+}
+
+
+/* Table */
+
+.table {
+    display: flex;
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+}
+
+.action {
+    background-color: #F5FAFF;
+    border-bottom: 1px solid #ddd;
+}
+
+.far-left {
+    border-left: 1px solid #ddd;
+}
+
+.far-right {
+    border-right: 1px solid #ddd;
+}
+
+.top-row {
+    border-top: 1px solid #ddd;
+}
+
+.padding-right {
+    padding-right: 7.5% !important;
+}
+
+#recommend {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#recommend td {
+    padding: 25px;
+}
+
+#recommend th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    text-align: left;
+    color: black;
+}
+
+.action-item {
+    color: #1665D8;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.account {
+    color: #3E3F42;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.chart-points {
+    color: #110630;
+    font-weight: 700;
+    font-size: 1.25rem;
+
+}
+
+.triangle {
+    color: #27D381;
+    padding-right: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+.action-icons {
+    color: #27D381;
+    padding-right: 10px;
+    height: 2rem;
+    position: relative;
+    top: 6px;
+}
+
+@media (max-width: 850px) {
+    .desktop-view {
+        display: none;
+    }
+}
+
+@media (min-width: 850px) {
+    .mobile-display {
+        display: none;
+    }
+}
+
+.new-section-mobile {
+    margin-top: 2rem;
+}
+
+.button-mobile {
+    margin-left: 0;
+    font-size: 1rem;
+}
+
+.mobile-points {
+    padding: 24px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.points-mobile {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #3E3F42;
+    margin-top: 0;
+}
+
+.triangle-up-number-mobile {
+    font-size: .75rem;
+    position: relative;
+    right: 23px;
+}
+
+.mobile-cc-label {
+    font-size: 1rem;
+    color: #07025B;
+}
+
+.mobile-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 2rem;
+}
+
+.card-header {
+    padding: 1rem;
+    background-color: #F5FAFF;
+    border-bottom: 1px solid #ddd;
+}
+
+h5.action-item {
+    font-size: 1.25rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+div.card-body p.account {
+    color: black;
+    font-weight: bold;
+}
+
+div.flex-credit h6 {
+    margin-bottom: 0;
+}

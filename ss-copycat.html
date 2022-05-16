@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="" en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Array ScoreSight</title>
+</head>
+
+<body>
+    <header class="header-results">
+        <h1>ScoreSight</h1>
+        <h3>Understand your score potential and the actions needed to get there.</h3>
+    </header>
+    <div>
+        <ul class="flex-container">
+            <!-- Using styled list to create links menu -->
+            <li><a href="#target-score">Target Score</a></li>
+            <li><a href="#debt-payment">Debt Payment</a></li>
+        </ul>
+        <div class="line-divider"></div>
+        <div class="select-divider"></div>
+    </div>
+    <div class="desktop-view">
+        <div class="flex-container">
+            <div class="how-to-box flex-left">
+                <div>
+                    <h4 class="how-to-text">How to Use</h4>
+                    <p class="how-to-text">First, select a target credit score. See what actions are available to reach
+                        this
+                        potential new score.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-right"></div>
+        </div>
+        <div class="table">
+            <table id="recommend">
+                <tr>
+                    <th colspan="2">
+                        <h3 class="title-h3">Target Score</h3>
+                    </th>
+                    <th colspan="3" class="right-padding">
+                        <h3 class="title-h3">Credit Scores</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="set-target">
+                            <div class="flex-container">
+                                <input /><button>Set Target</button>
+                            </div>
+                            <div class="flex-container score-line">
+                                <div class="red-line"></div>
+                                <div class="yellow-line"></div>
+                                <div class="green-line"></div>
+                                <span class="material-symbols-outlined circle-selector">
+                                    trip_origin
+                                </span>
+                            </div>
+                            <div class="flex-container score-line">
+
+                                <p class="score-line-number">300</p>
+                                <p class="score-line-number">560</p>
+                                <p class="score-line-number">750</p>
+                                <p class="score-line-number-end">850</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="points"><img src="img/transunion_logo.png" alt="transunion logo" class="bank-logo" />
+                        <p class="points">659
+                        </p>
+                    </td>
+                    <td class="points"><img src="img/Equifax_Logo.svg" alt="equifax logo" class="bank-logo" />
+                        <p class="points">660
+                        </p>
+                    </td>
+                    <td class="points"><img src="img/Experian_logo.svg" alt="experian logo" class="bank-logo" />
+                        <p class="points">659
+                        </p>
+                    </td>
+                </tr>
+                <tr class="top-row">
+                    <th colspan="2" class="far-left">
+                        <h3>Recommended Actions</h3>
+                    </th>
+                    <th colspan="3" class="far-right">
+                        <h3>Potential Impact</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2" class="far-left padding-right">These recommendations are only estimates.
+                        They do not
+                        take into
+                        consideration future
+                        factors like balance changes and late payments.</td>
+                    <td class="points">679<sup class="triangle-up">&#x25B2</sup><sub class="triangle-up-number">20</sub>
+                    </td>
+                    <td class="points">678<sup class="triangle-up">&#x25B2</sup><sub class="triangle-up-number">19</sub>
+                    </td>
+                    <td class="points far-right">678<sup class="triangle-up">&#x25B2</sup><sub
+                            class="triangle-up-number">19</sub></td>
+                </tr>
+                <tr>
+                    <th class="far-left">Action</th>
+                    <th>Account</th>
+                    <th>TransUnion</th>
+                    <th>Equifax</th>
+                    <th class="far-right">Experian</th>
+                </tr>
+                <tr class="action top-row">
+                    <td class="far-left action-item"><span class="material-symbols-outlined action-icons">
+                            credit_card
+                        </span>Make an On-time Payment</td>
+                    <td class="account">BK OF AMER #456 9356 ****</td>
+                    <td class="chart-points"><span class="triangle">&#x25B2</span>3 pts</td>
+                    <td class="chart-points"><span class="triangle">&#x25B2</span>2 pts</td>
+                    <td class="far-right chart-points">
+                        <span class="triangle">&#x25B2</span> 3 pts
+                    </td>
+                </tr>
+                <tr class="action">
+                    <td class="far-left action-item"><span class="material-symbols-outlined action-icons">
+                            credit_card
+                        </span>Make an On-time Payment</td>
+                    <td class="account">JPMCB CARD #736 4625 ****</td>
+                    <td class="chart-points"><span class="triangle">&#x25B2</span>3 pts</td>
+                    <td class="chart-points"><span class="triangle">&#x25B2</span>3 pts</td>
+                    <td class="far-right chart-points"><span class="triangle">&#x25B2</span>2 pts</td>
+                </tr>
+                <tr class="action">
+                    <td class="far-left action-item"><span class="material-symbols-outlined action-icons">
+                            speed
+                        </span>Increase credit limit</td>
+                    <td class="account">BK OF AMER #456 9356 ****</td>
+                    <td class="chart-points"><span class="triangle">&#x25B2</span>3 pts</td>
+                    <td class="chart-points"><span class="triangle">&#x25B2</span>3 pts</td>
+                    <td class="far-right chart-points"><span class="triangle">&#x25B2</span>3 pts</td>
+                </tr>
+                <tr class="action">
+                    <td class="far-left action-item"><span class="material-symbols-outlined action-icons">
+                            payments
+                        </span>Pay Down Debt</td>
+                    <td class="account">BK OF AMER #456 9356 ****</td>
+                    <td class="chart-points"><span class="triangle">&#x25B2</span>2 pts</td>
+                    <td class="chart-points"><span class="triangle">&#x25B2</span>2 pts</td>
+                    <td class="far-right chart-points"><span class="triangle">&#x25B2</span>2 pts</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="mobile-display">
+        <div class="how-to-box">
+            <div>
+                <h4 class="how-to-text">How to Use</h4>
+                <p class="how-to-text">First, select a target credit score. See what actions are available to reach
+                    this
+                    potential new score.
+                </p>
+            </div>
+        </div>
+        <h3 class="new-section-mobile title-h3">Credit Scores</h3>
+        <div class="flex-container">
+            <div class="flex-credit">
+                <span class="points">
+                    <img src="img/transunion_logo.png" alt="transunion logo" class="bank-logo" />
+                    <p class="points">659</p>
+                </span>
+            </div>
+            <div class="flex-credit points">
+                <span class="points">
+                    <img src="img/Equifax_Logo.svg" alt="equifax logo" class="bank-logo" />
+                    <p class="points">660</p>
+                </span>
+            </div>
+            <div class="flex-credit">
+                <span class="points">
+                    <img src="img/Experian_logo.svg" alt="experian logo" class="bank-logo" />
+                    <p class="points">659</p>
+                </span>
+            </div>
+        </div>
+        <h3 class="new-section-mobile title-h3">Target Score</h3>
+        <div class="set-target">
+            <div class="flex-container">
+                <input />
+            </div>
+            <div class="flex-container score-line">
+                <div class="red-line"></div>
+                <div class="yellow-line"></div>
+                <div class="green-line"></div>
+                <span class="material-symbols-outlined circle-selector">
+                    trip_origin
+                </span>
+            </div>
+            <div class="flex-container score-line">
+                <p class="score-line-number">300</p>
+                <p class="score-line-number">560</p>
+                <p class="score-line-number">750</p>
+                <p class="score-line-number-end">850</p>
+            </div>
+            <div class="flex-container">
+                <button class="button-mobile">Set Target</button>
+            </div>
+        </div>
+        <div>
+            <h3 class="new-section-mobile title-h3">Potential Impact</h3>
+        </div>
+        <div class="flex-container mobile-points">
+            <div class="points-mobile flex-credit">
+                679
+                <sup class="triangle-up">&#x25B2</sup>
+                <span class="triangle-up-number-mobile">20</span>
+                <p class="mobile-cc-label">Transunion</p>
+            </div>
+            <div class="points-mobile flex-credit">
+                678
+                <sup class="triangle-up">&#x25B2</sup>
+                <span class="triangle-up-number-mobile">19</span>
+                <p class="mobile-cc-label">Equifax</p>
+            </div>
+            <div class="points-mobile flex-credit">
+                678
+                <sup class="triangle-up">&#x25B2</sup>
+                <span class="triangle-up-number-mobile">19</span>
+                <p class="mobile-cc-label">Experian</p>
+            </div>
+        </div>
+        <div>
+            <h3 class="new-section-mobile title-h3">Recommended Actions</h3>
+            <p>These recommendations are only estimates.They do not take into consideration future factors like balance
+                changes and late payments.</p>
+            <div class="mobile-card">
+                <div class="card-header">
+                    <h5 class="action-item"><span class="material-symbols-outlined action-icons">
+                            credit_card
+                        </span>Make an On-time Payment</h5>
+                </div>
+                <div class="card-body">
+                    <p class="account">
+                        BK OF AMER #456 9356 ****
+                    </p>
+                    <p>
+                        Making a payment on this account could result in a 3 point score increase.
+                    </p>
+                    <div class="flex-container">
+                        <div class="flex-credit">
+                            <h6>TransUnion</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                        <div class="flex-credit">
+                            <h6>Equifax</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                        <div class="flex-credit">
+                            <h6>Experian</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mobile-card">
+                <div class="card-header">
+                    <h5 class="action-item"><span class="material-symbols-outlined action-icons">
+                            credit_card
+                        </span>Make an On-time Payment</h5>
+                </div>
+                <div class="card-body">
+                    <p class="account">
+                        JPMCB CARD #736 4625 ****
+                    </p>
+                    <p>
+                        Making a payment on this account could result in a 3 point score increase.
+                    </p>
+                    <div class="flex-container">
+                        <div class="flex-credit">
+                            <h6>TransUnion</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                        <div class="flex-credit">
+                            <h6>Equifax</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                        <div class="flex-credit">
+                            <h6>Experian</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mobile-card">
+                <div class="card-header">
+                    <h5 class="action-item"><span class="material-symbols-outlined action-icons">
+                            speed
+                        </span>Increase credit limit</h5>
+                </div>
+                <div class="card-body">
+                    <p class="account">
+                        BK OF AMER #456 9356 ****
+                    </p>
+                    <p>
+                        Making a payment on this account could result in a 3 point score increase.
+                    </p>
+                    <div class="flex-container">
+                        <div class="flex-credit">
+                            <h6>TransUnion</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                        <div class="flex-credit">
+                            <h6>Equifax</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                        <div class="flex-credit">
+                            <h6>Experian</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mobile-card">
+                <div class="card-header">
+                    <h5 class="action-item"><span class="material-symbols-outlined action-icons">
+                            payments
+                        </span>Pay down debt</h5>
+                </div>
+                <div class="card-body">
+                    <p class="account">
+                        JPMCB CARD #736 4625 ****
+                    </p>
+                    <p>
+                        Making a payment on this account could result in a 3 point score increase.
+                    </p>
+                    <div class="flex-container">
+                        <div class="flex-credit">
+                            <h6>TransUnion</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                        <div class="flex-credit">
+                            <h6>Equifax</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                        <div class="flex-credit">
+                            <h6>Experian</h6>
+                            <p><span class="triangle">&#x25B2</span>3 pts</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Important: Based on taking these actions, the best day to check for score increases is the 28th of
+            the month.
+            Allow up to three months to achieve full results.
+            These recommendations are only estimates. They do not take into consideration future factors like
+            balance
+            changes and late payments.</p>
+        <p>Vantage Scorre 3.0</p>
+    </footer>
+
+
+
+</body>
+
+</html>

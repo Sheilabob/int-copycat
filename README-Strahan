@@ -1,0 +1,12 @@
+This is a project as part of a hiring test for Array. It uses HTML and CSS to build a consumer-facing Web Component.
+
+This is the source repo:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://gitlab.com/array.com/tests-html-css)
+
+This page was designed based on the test.fig design file, focusing only on the 3B - Results page.
+
+It is responsive and ready for a frontend engineer to start adding interactivity and API functionality.
+
+No external frameworks or libraries were used - it is all vanilla CSS and HTML.
+
+There are links to relevant Google fonts and icons. 3 downloaded logo files are included.
